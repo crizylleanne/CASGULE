@@ -1,0 +1,128 @@
+body{
+    font-family: "Lato", sans-serif;
+    background: linear-gradient( to right,   #c4e29f,#769353,#517223);
+}
+
+.logo{
+    font-family: fantasy;
+    font-weight: unset;
+    color:#1f2f09;
+    font-size: 24px;
+}
+
+.sidebar {
+    left:0;
+    top: 1px;
+    width:250px;
+    height:100%;
+    padding-top: 30px;
+    background: linear-gradient( to right, #aece87,#5b7140);
+  position: fixed;
+  }
+  .sidebar img{
+    height: 40%;
+     width: 80%;
+     margin-left: 15px;
+  }
+  
+  .sidebar a {
+    padding-left: 25%;
+    display: block;
+    color: #2c4a02;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+   
+  .sidebar a.active {
+    margin-left: 3px;
+    border-radius: 2px;
+    padding-top: 2%;
+    background-color:#aece87;
+    color:#ffffff;
+  }
+  .sidebar a:hover:not(.active) {
+    text-align: center;
+    margin-left: 3px;
+    padding: 1px;
+    border-radius: 2px;
+    background-color:#b6cf92;
+    color: rgb(226, 246, 214);
+  }
+  
+.box{
+    padding-left: 24%;
+    height: auto;
+    width: 70%;
+}
+.card{
+	width: 100%;
+    margin: 15px;
+    padding: 4px;
+	background:rgba(70, 99, 55, 0.852);
+    color: white;
+	border-radius: 10px;
+	text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ffffff;
+    
+}
+h2{
+    color: #1f2f09;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+/*mobile view*/
+@media  only screen and (max-width:800px),(max-width:700px),(max-width:600px),
+(max-width:500px),(max-width:500px),(max-width:320px){
+    .sidebar {
+        top: 1px;
+        width:100%;
+        height: auto;
+        background: linear-gradient( to right, #aece87,#5b7140);
+        
+      }
+      
+      .sidebar a {
+        padding-left: 40%;
+        display: block;
+        color: #2c4a02;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bolder;
+        display: block;
+      }
+       
+      .sidebar a.active {
+        margin-left: 3px;
+      
+        border-radius: 2px;
+        padding-top: 3%;
+        background-color:#aece87;
+        color:#ffffff;
+      }
+      .sidebar a:hover:not(.active) {
+        text-align: center;
+        margin-left: 3px;
+        padding: 2px;
+        border-radius: 2px;
+        background-color:#b6cf92;
+        color: rgb(226, 246, 214);
+      }
+      .sidebar img{
+        height: 35%;
+         width: 30%;
+        padding-left: 30%;
+      }
+    .box{
+        text-align: center;
+        padding-left: 13%;
+        margin-top: 75%;
+    }
+    .card{
+        width: 100%;
+
+        
+    }
+}

@@ -1,0 +1,126 @@
+body{
+    background: linear-gradient( to right,   #c4e29f,#769353,#517223);
+}
+.sidebar {
+    left:0;
+    top: 1px;
+    width:250px;
+    height:100%;
+    padding-top: 30px;
+    background: linear-gradient( to right, #aece87,#5b7140);
+  position: fixed;
+  }
+  .sidebar img{
+    height: 40%;
+     width: 80%;
+     margin-left: 15px;
+  }
+  
+  .sidebar a {
+    padding-left: 25%;
+    display: block;
+    color: #2c4a02;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+  }
+   
+  .sidebar a.active {
+    margin-left: 3px;
+    border-radius: 2px;
+    padding-top: 2%;
+    background-color:#aece87;
+    color:#ffffff;
+  }
+  .sidebar a:hover:not(.active) {
+    text-align: center;
+    margin-left: 3px;
+    padding: 1px;
+    border-radius: 2px;
+    background-color:#b6cf92;
+    color: rgb(226, 246, 214);
+  }
+  
+  .logo{
+    margin-left: 33%;
+    float: left;
+    color:#d0f0a5;
+    font-weight: bolder;
+    font-size:36px;
+  }
+
+h2{
+    font-size: 33px;
+    font-weight: bolder;
+ }
+
+ h3{
+     font-size: 16px;
+     font-family:Cambria;
+ }
+ section{
+margin-left: 28%;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: baseline;
+}
+ 
+.card{
+    width: 100%;
+	background:rgba(154, 185, 139, 0.852);
+	border-radius: 10px;
+	text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ffffff;
+    
+}
+@media  only screen and (max-width:800px),(max-width:700px),(max-width:600px),
+(max-width:500px),(max-width:500px),(max-width:320px){
+    .sidebar {
+        top: 1px;
+        width:100%;
+        height: auto;
+        background: linear-gradient( to right, #aece87,#5b7140);
+        
+      }
+      
+      .sidebar a {
+        padding-left: 40%;
+        display: block;
+        color: #2c4a02;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bolder;
+        display: block;
+      }
+       
+      .sidebar a.active {
+        margin-left: 3px;
+      
+        border-radius: 2px;
+        padding-top: 3%;
+        background-color:#aece87;
+        color:#ffffff;
+      }
+      .sidebar a:hover:not(.active) {
+        text-align: center;
+        margin-left: 3px;
+      }
+      .sidebar img{
+        height: 35%;
+         width: 30%;
+        padding-left: 30%;
+      }
+
+    .card{
+        width: 100%;
+        text-align: center;
+    }
+    section{
+        margin-left: 5%;
+        text-align: center;
+        margin-top: 70%;
+    }
+}

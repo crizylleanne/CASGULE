@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width= device-width, initial scale=1.0">
+        <title>Image Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="portfolio_image.css">
+    </head>
+<body>
+   
+ 
+
+<header>
+    <div id="Sidebar"  class="sidebar">
+      <img src="images/green.png">
+        <a href="index.html" class="active" ><i class="fa-solid fa-house"></i>Home</a>
+        <a href="portfolio_image.html"><i class="fa-solid fa-image"></i>Gallery</a>
+        <a href="Services Page.html"> <i class="fa-solid fa-paintbrush"></i></i>Services</a>
+        <a href="ABOUT PAGE.html"><i class="fa-solid fa-circle-user"></i>About</a>
+      </div>
+
+          </div>
+      </div>
+</header>
+    
+
+ <div class="row">
+    <h2>Gallery</h2>
+        <div class="column">
+            <img src="images/Marin_kitagawa.jpg" alt="blonde" onclick="myFunction(this);">
+            <img src="images/Blue_haired.jpg" alt="girl"  onclick="myFunction(this);" >
+            <img src="images/oc.jpg" alt="oc" onclick="myFunction(this);">
+            <img src="images/superman.jpg" alt="superman" onclick="myFunction(this);">
+            <img src="images/Komi_art.png" alt="komi" onclick="myFunction(this);">
+        </div>
+</div>
+ <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+    <img id="expandedImg"  class="photos">
+    <div id="imgtext"></div>
+   </div>
+
+   <script>
+    function myFunction(imgs){
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandedImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+
+    }
+   </script>
+   
+</body>
+</html>
